@@ -11,7 +11,8 @@ Before running this application, ensure that your system meets the following req
 ## Clone the code to your local machine
 
 How you can run the code in local machine:
-1. Clone the repository: [https://shorturl.at/knBI9].
+1. Clone the repository: [https://shorturl.at/knBI9]
+
         method 1. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command: <git clone https://github.com/insane51/user-authentication-api.git>.
 
         method 2: Open the link : https://github.com/insane51/user-authentication-api ,go to code(green button),then click on 'Download zip'.
@@ -47,13 +48,13 @@ Now app is running at your localhost and port.
 ## API documentation of the application
 
 How to open API documentation:
+
 1.Ensure that your Node.js application is running locally and the Swagger documentation is configured correctly. Make sure you have completed the necessary setup and integration steps for Swagger in your application.
 
 2.Open a web browser of your choice.
 
 3.Enter the URL for the Swagger API documentation endpoint in the address bar. In this case, it would 
     be http://localhost:<port>/api-docs. Replace <port> with the port number on which your Node.js application is running locally.
-
     For example, if your Node.js application is running on port 3000 locally, you would enter 
     http://localhost:3000/api-docs in the browser's address bar.
 
@@ -68,16 +69,16 @@ How to open API documentation:
 
 
 - controllers
-    -userAuthController :- register,login and logout controllers will be defined
-    -userController :- get user profile and update user profile controller will defined
-    -validator :- To validater functions will be defined
-    -verifyToken :- Token verification functions will be defined
-    -verifyTokenBlockList :- Check for token is not added in block list function defined
+    - userAuthController :- register,login and logout controllers will be defined
+    - userController :- get user profile and update user profile controller will defined
+    - validator :- To validater functions will be defined
+    - verifyToken :- Token verification functions will be defined
+    - verifyTokenBlockList :- Check for token is not added in block list function defined
 - models
-    -expiredToken :- Model define to store blocked tokens
-    -user :- User model define
+    - expiredToken :- Model define to store blocked tokens
+    - user :- User model define
 - routes
-    -userRoutes :- Define user routes
+    - userRoutes :- Define user routes
 - .env 
 - .gitignore
 - index.js :- Main app starting file/point
