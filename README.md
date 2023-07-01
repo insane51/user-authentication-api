@@ -12,16 +12,15 @@ Before running this application, ensure that your system meets the following req
 
 How you can run the code in local machine:
 1. Clone the repository: [https://shorturl.at/knBI9]
-
-        method 1. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command: <git clone https://github.com/insane51/user-authentication-api.git>.
-
+        method 1. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command: <git         clone https://github.com/insane51/user-authentication-api.git>.
         method 2: Open the link : https://github.com/insane51/user-authentication-api ,go to code(green button),then click on 'Download zip'.
         A zip file was downloaded,extract it using any zip extrater software(like winRAR).
 
 2.Install dependencies: Navigate to the cloned repository directory and install the required 
                         dependencies.Typically, Node.js projects use a package.json file to
                         manage dependencies. Run the following command:
-                        <npm install> :This command will read the package.json file and install 
+                        
+                        npm install :This command will read the package.json file and install 
                         all the required dependencies listed in it.
                         [https://shorturl.at/iqFGX].
 
@@ -36,7 +35,8 @@ How you can run the code in local machine:
 
 5.Run the application: Once the dependencies are installed and the application is configured, 
                         you can start the Node.js server by running the following command:
-                        <npm start>.
+                        
+                        npm start
 
 6.Access the application: After the server starts successfully, you can access the application in 
                         your web browser or make requests to the defined endpoints using tools like 
