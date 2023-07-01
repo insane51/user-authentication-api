@@ -58,6 +58,8 @@ How to open API documentation:
     For example, if your Node.js application is running on port 3000 locally, you would enter 
     http://localhost:3000/api-docs in the browser's address bar.
 
+    http://localhost:3000/api-docs
+
 4.Press Enter or Return to load the URL.
 
 5.The Swagger API documentation page should now be displayed in your web browser. It provides a user-friendly interface to browse and interact with your API documentation. You can explore the available endpoints, their descriptions, request parameters, and example responses.

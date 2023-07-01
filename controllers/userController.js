@@ -56,7 +56,7 @@ const profileUpdateController = async (req,res)=>{
 
         //Generate a hashed value of new password send by the user
         const newPassword = CryptoJS.enc.Base64.stringify(
-            CryptoJS.HmacSHA256(req.body.password,process.env.PASS_KEY));
+            CryptoJS.HmacSHA256(req.body.newPassword,process.env.PASS_KEY));
 
         //Create a new User
         var updateUser = {
@@ -67,9 +67,14 @@ const profileUpdateController = async (req,res)=>{
 
         //Find the user by ID and update 
         const dbResponse = await User.findByIdAndUpdate(req.params.id,updateUser,{new:true});
+        const {username,email} = dbResponse;
 
         //Response will be sent to the user
-        res.status(200).json({message:`User Updated Successfully`+dbResponse});
+        res.status(200).json({
+            message:`User Updated Successfully`,
+            username : username,
+            email : email
+        });
         return;
     }catch(err){
         //If any erroe occured ,sent it to the user as a response
